@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Landing Page Animation | Codegrid</title>
+		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=El+Messiri&display=swap" rel="stylesheet"> 
+		<link href="https://fonts.googleapis.com/css2?family=Syncopate&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="site-logo">日本</div>
+			<div class="navbar">
+				<div class="site-menu">
+					<div class="menu-item">projects</div>
+					<div class="menu-item">about</div>
+					<div class="menu-item">contact</div>
+				</div>
+			</div>
+		</header>
+		<div class="container">
+			
+			<div class="wrapper-img">
+				<div class="box"></div>
+				<div>
+					<img class="img" src="photo.jpg" />
+				</div>
+			</div>
+
+			<div class="wrapper-img-2">
+				<div class="box-2"></div>
+				<div>
+					<img class="img" src="photo-2.jpg" />
+				</div>
+			</div>
+
+			<div class="circle-shape"></div>
+			<div class="circle-shape-2"></div>
+			<div class="circle-shape-3"></div>
+			<div class="blocks">
+				<div class="block-1 block">A</div>
+				<div class="block-2 block">N</div>
+				<div class="block-3 block">I</div>
+				<div class="block-4 block">M</div>
+				<div class="block-5 block">E</div>
+			</div>
+		</div>
+
+		<script>
+			TweenMax.to(".block-1", 2, {
+				x: "-180",
+				y: "-100",
+				scale: "2.4",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-2", 2, {
+				x: "-180",
+				y: "200",
+				scale: "1.2",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-3", 2, {
+				x: "180",
+				y: "-240",
+				scale: "1.6",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-4", 2, {
+				x: "280",
+				y: "240",
+				scale: "0.8",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".block-5", 2, {
+				x: "280",
+				y: "-180",
+				scale: "0.8",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".box", 2.4, {
+				y: "-100%",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.to(".box-2", 2.4, {
+				y: "100%",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.from(".circle-shape", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+
+			TweenMax.from(".circle-shape-2", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".circle-shape-3", 2.4, {
+				scale: "0",
+				ease: Expo.easeInOut,
+			});
+			TweenMax.from(".navbar > div", 1.6, {
+				opacity: 0,
+				y: 60,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+			TweenMax.from(".site-logo", 1.6, {
+				opacity: 0,
+				y: 40,
+				ease: Expo.easeInOut,
+				delay: 0.6,
+			});
+		</script>
+	</body>
+</html>
+
+<!-- position: absolute;
+	top: 64%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	width: 240px;
+	height: 240px;
+	background: #307F96;
+	border-radius: 100%; -->
